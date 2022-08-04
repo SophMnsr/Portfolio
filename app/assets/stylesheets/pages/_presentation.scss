@@ -1,0 +1,24 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+.presentation-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0%;
+  color: $maintext;
+}
+
+.presentation-description {
+  font-size: 1.95rem;
+  font-weight: 300;
+  margin: 0%;
+  color: $maintext;
+  text-align: justify;
+}
+
+.presentation-contact {
+  display:flex;
+}
