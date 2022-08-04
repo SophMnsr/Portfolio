@@ -1,0 +1,17 @@
+.banner {
+  background-image: image-url("bannerbackground.jpg");
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text {
+  color: $background;
+  text-shadow: 1px 1px 2px $backgroundshadow;
+  font-size: 6rem;
+  font-weight: 300;
+  font-family: 'Lemon/Milk';
+  margin-left: 5%;
+}

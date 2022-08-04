@@ -1,0 +1,13 @@
+@import "config/index";
+@import "components/index";
+@import "pages/index";
+
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5% // 1rem = 10px
+}
+
+body {
+  background-color: $background;
+}
