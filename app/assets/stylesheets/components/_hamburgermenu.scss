@@ -1,0 +1,83 @@
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  right: 3% !important;
+}
+
+.menu__btn {
+  position: absolute;
+  top: 8vh;
+  right: 3vw;
+  width: 2.5vw;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+
+.menu__btn > span::before,
+
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $background;
+  box-shadow: 1px 1px 2px $backgroundshadow;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: flex;
+  position: absolute;
+  top: 6%;
+  right: -14%;
+  list-style: none;
+  box-shadow: 2px 2px 6px $backgroundshadow;
+  transition-duration: .25s;
+  z-index: 1;
+  width: 14vw;
+  height: 30vh;
+  margin: 39px 0 20px 20px;
+  background: radial-gradient(circle, $background, $background);
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.menu__item {
+  display: block;
+  color: $maintext;
+  font-weight: 300;
+  font-size: 2em;
+  transition-duration: .25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
