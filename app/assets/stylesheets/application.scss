@@ -10,4 +10,13 @@ html {
 
 body {
   background-color: $background;
+
+  a{
+    text-decoration: none;
+  }
+
+  li{
+    list-style: none;
+    text-decoration: none;
+  }
 }
